@@ -9,12 +9,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: deploy
-        uses: appleboy/ssh-action@v0.1.2
-        with:
-          host: ${{secrets.SSH_HOST}}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            cd /home/ubuntu/projects/githubActions/
-            git pull origin main
+        run: echo "Hello, world!"
+             git pull origin main
+        
