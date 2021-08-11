@@ -11,5 +11,5 @@ jobs:
       - name: deploy
         run: |
           pwd
-          cd /home/ubuntu/projects/githubActoins
+          cd /home/ubuntu/projects/githubActions
           git pull origin main
