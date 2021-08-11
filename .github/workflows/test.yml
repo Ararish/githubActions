@@ -10,5 +10,6 @@ jobs:
     steps:
       - name: deploy
         run: echo "Hello, world!"
+             cd /home/ubuntu/projects/githubActoins
              git pull origin main
         
