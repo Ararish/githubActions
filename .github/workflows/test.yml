@@ -9,7 +9,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: deploy
-        run: echo "Hello, world!"
-             cd /home/ubuntu/projects/githubActoins
-             git pull origin main
+        run: cd /home/ubuntu/projects/githubActoins
+      - name: pullcode 
+        run: git pull origin main
         
